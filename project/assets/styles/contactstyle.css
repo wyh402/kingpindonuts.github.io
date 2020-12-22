@@ -1,0 +1,132 @@
+*{
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+}
+
+.container{
+    max-width: 65%;
+    margin: auto;
+}
+
+nav{
+    background-color: #c060a1;
+    height: 120px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+nav a{
+    margin-left: 20px;
+    margin-right: 40px;
+    color: #fdf3f3;
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+nav a:hover{
+    text-decoration: underline;
+}
+
+.banner{
+    position: relative;
+    width:100%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.banner img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    animation: blur;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+}
+
+#title{
+    width:178.47px;
+    height:84px;
+    margin-top: 18%;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    font-family: 'Baloo Tamma 2';
+    font-size: 60px;
+    font-weight: bolder;
+    color: #1e1b18;
+    opacity: 0;
+    letter-spacing: 20px;
+    animation: blur2;
+    animation-delay: 1s;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+}
+
+@keyframes blur{
+    0%{opacity:0.4}
+    100%{filter:opacity(0.65);}
+}
+
+@keyframes blur2{
+    0%{opacity:0.2}
+    100%{opacity: 1}
+}
+
+
+.contact{
+    width: 100%;
+    background-color: #f7f3ff;
+    margin-top: 45%;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.map_content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#map{
+    width: 300px;
+    height: auto;
+    border: solid 5px #c060a1;
+    border-radius: 15%;
+    margin-left: 20%;
+}
+
+.text{
+    font-family: 'Baloo Tamma 2';
+    font-size: 14px;
+    text-align: center;
+    line-height: 140%;
+    margin-right: 25%;
+}
+
+.text a{
+    font-family: "Baloo Tamma 2";
+    font-size: 25px;
+    color: #6a097d;
+    font-weight: bold;
+}
+
+#welcome{
+    font-family: "Baloo Tamma 2";
+    font-size: 20px;
+    line-height: 150%;
+}

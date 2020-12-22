@@ -1,0 +1,71 @@
+*{
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+}
+
+body{
+    margin:0;
+    display:-webkit-box;
+    background-color: #f7f3ff;
+    height:100%;
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.container{
+    position: relative;
+    right:0;
+    width: 30%;
+    height:auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+img{
+    height: 100%;
+    width: auto;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2{
+    font-family: 'Baloo Tamma 2';
+    font-size: 70px;
+    text-align: center;
+    color: #000000;
+    margin-top: 50%;
+}
+
+#button1,#button2,#button3{
+    background-color:#c060a1;
+    font-family: 'Montserrat', sans-serif;
+    width: 230px;
+    height: 60px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-top: 15px;
+    margin-bottom: 25px;
+    border-radius: 20px;
+}
+
+#button1:hover,#button2:hover,#button3:hover{
+    background-color: #790c54;
+}
+
+a{
+    color: #Fdf3f3;
+    text-decoration: none;
+    font-weight:bold;
+}

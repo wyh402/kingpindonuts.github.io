@@ -1,0 +1,197 @@
+.container{
+    max-width: 65%;
+    margin: auto;
+}
+
+nav{
+    background-color: #c060a1;
+    height: 120px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+nav a{
+    margin-left: 20px;
+    margin-right: 40px;
+    color: #fdf3f3;
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+nav a:hover{
+    text-decoration: underline;
+}
+
+.banner{
+    position: relative;
+    width:100%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.banner img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    animation: blur;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+}
+
+#title{
+    margin-top: 18%;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    font-family: 'Baloo Tamma 2';
+    font-size: 60px;
+    font-weight: bolder;
+    color: #1e1b18;
+    opacity: 0;
+    letter-spacing: 20px;
+    animation: blur2;
+    animation-delay: 1s;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+}
+
+@keyframes blur{
+    0%{opacity:0.4}
+    100%{filter:opacity(0.65);}
+}
+
+@keyframes blur2{
+    0%{opacity:0.2}
+    100%{opacity: 1}
+}
+
+.menu{
+    width: 100%;
+    background-color: #f7f3ff;
+    margin-top: 45%;
+    height: 1900px;
+}
+
+.menu_content{
+    position: relative;
+    width: 100%;
+}
+
+h3{
+    width: 100%;
+    font-size: 40px;
+    font-family: 'Pacifico';
+    color: #6a097d;
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+#regular,#fancy,#extra_fancy{
+    position: absolute;
+    width: 100%;
+    margin-top: 10%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#regular p,#fancy p,#extra_fancy p{
+    width: 100%;
+    font-family: 'Lato';
+    font-weight: bold;
+    font-size: 15px;
+    color:black;
+    text-align: center;
+}
+
+#fancy{
+    margin-top: 60%;
+}
+
+#extra_fancy{
+    margin-top: 110%;
+}
+
+#pink_donut{
+    position: absolute;
+    width: 80px;
+    height: auto;
+    margin-left: 21.5%;
+    margin-top: 10.2%;
+    transform: rotate(-40deg);
+    animation: spin;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+    animation-direction: alternate;
+}
+
+#sprinkled_donut{
+    position: absolute;
+    width: 80px;
+    height: auto;
+    margin-left: 76.4%;
+    margin-top: 80%;
+
+    animation: bounce;
+    animation-duration: 0.6s;
+    animation-timing-function: ease-in;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+#shadow {
+
+    position: absolute;
+    height: 30px;
+    width: 75px;
+    background: black;
+    opacity: 0.3;
+    border-radius: 50%;
+    margin-left: 77%;
+    margin-top: 96.4%;
+
+
+    animation: shadow;
+    animation-duration: 0.6s;
+    animation-timing-function: ease-in;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+@keyframes spin{
+    0%{transform: rotate(-40deg);}
+    100%{transform: rotate(30deg);}
+}
+
+@keyframes bounce{
+    100%{margin-top: 91%;}
+}
+
+@keyframes shadow{
+    100% {transform: scale(0.5); opacity:0.5;}
+}
+
+#cookie1{
+    position: absolute;
+    width: 80px;
+    height: auto;
+    margin-left: 19%;
+    margin-top: 144%;
+    animation: spin;
+    animation-iteration-count: infinite;
+    animation-duration: 1.8s;
+    animation-direction: alternate;
+}
+
+@keyframes spin2{
+    0%{transform: rotate(-15deg);}
+    100%{transform: rotate(5deg);}
+}
